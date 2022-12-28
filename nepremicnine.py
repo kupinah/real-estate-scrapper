@@ -97,7 +97,7 @@ class NepremicnineAdParser(AdParser):
 
         for ix, ad in enumerate(ads):
             ad_text = ad.text
-            if ad == "":
+            if ad_text == "":
                 rotten_ads_ix.append(ix)
                 continue
             ad_type.append(ad_text[:ad_text.index(":")])
@@ -157,7 +157,7 @@ class NepremicnineAdParser(AdParser):
             building_type = building_types[ad]
             state = states[ad].capitalize()
 
-            nepremicnine_data = [location, price, rent_rate, size, ad_type, building_type, state]
+            nepremicnine_data = [location, price_f, rent_rate, size_f, ad_type, building_type, state]
 
             _DATA.loc[len(_DATA)] = nepremicnine_data
 
@@ -330,7 +330,7 @@ def process_data() -> None:
 
     print(_DATA)
 
-    print(f"Mediana cen znaša: {_DATA['Cena [€]'].median()}, a povprečje: {_DATA['Cena [€]'].mean()}")
+    print(f"Mediana cen znaša: {_DATA['Cena [€]'].median()}, povprečje pa: {_DATA['Cena [€]'].mean()}")
 
 
 def main() -> None:
