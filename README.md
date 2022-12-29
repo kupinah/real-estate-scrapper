@@ -35,6 +35,11 @@ Adding new attributes is pretty straight-forward.
 
 Median and mean of the prices of the ads are shown at the end.
 
+### Usage
+```py
+python nepremicnine.py
+```
+
 ### Next steps
 Calculation of attribute correlation would be a good thing to do.
 

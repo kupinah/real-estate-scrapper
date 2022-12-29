@@ -326,11 +326,12 @@ class BolhaAdParser(AdParser):
 
 
 def process_data() -> None:
-    """ Show data and some important metrics from data """
-
-    print(_DATA)
+    """ Write data and show some important metrics from data """
 
     print(f"Mediana cen znaša: {_DATA['Cena [€]'].median()}, povprečje pa: {_DATA['Cena [€]'].mean()}")
+
+    filename = "nepremicnine.csv"
+    _DATA.to_csv(filename, encoding='utf-8-sig', index=False)
 
 
 def main() -> None:
