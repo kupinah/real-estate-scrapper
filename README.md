@@ -36,6 +36,13 @@ Adding new attributes is pretty straight-forward.
 Median and mean of the prices of the ads are shown at the end.
 
 ### Usage
+Run 
+```py
+pip install -r ./requiremenets.txt
+```
+to install all requirements.
+
+After that, run script as
 ```py
 python nepremicnine.py
 ```
