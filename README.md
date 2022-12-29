@@ -38,7 +38,7 @@ Median and mean of the prices of the ads are shown at the end.
 ### Usage
 Run 
 ```py
-pip install -r ./requiremenets.txt
+pip install -r ./requirements.txt
 ```
 to install all requirements.
 
